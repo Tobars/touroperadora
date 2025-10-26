@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquetes - El Encanto Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-umbrella-beach"></i> El Encanto Travel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="paquetes.html">Paquetes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html" style="color: var(--accent) !important;">
+                        <i class="fas fa-user-shield"></i> Admin
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" style="height: 50vh;">
+        <div class="container text-center">
+            <h1 class="mb-4">Nuestros Paquetes</h1>
+            <p class="mb-0">Descubre las mejores experiencias de viaje a precios increíbles</p>
+        </div>
+    </section>
+
+    <section class="tours-section">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-12">
+                    <div class="card tour-card">
+                        <div class="card-body p-4">
+                            <div class="row g-3">
+                                <div class="col-md-3">
+                                    <select class="form-select">
+                                        <option value="">Tipo de Tour</option>
+                                        <option value="playa">Playa</option>
+                                        <option value="aventura">Aventura</option>
+                                        <option value="cultural">Cultural</option>
+                                        <option value="resort">Resort</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <select class="form-select">
+                                        <option value="">Destino</option>
+                                        <option value="mexico">México</option>
+                                        <option value="peru">Perú</option>
+                                        <option value="rd">República Dominicana</option>
+                                        <option value="colombia">Colombia</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <select class="form-select">
+                                        <option value="">Duración</option>
+                                        <option value="3-5">3-5 días</option>
+                                        <option value="6-8">6-8 días</option>
+                                        <option value="9+">9+ días</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <button class="btn btn-primary w-100">
+                                        <i class="fas fa-search"></i> Buscar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Tours de Playa</h2>
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card tour-card">
+                        <div class="tour-image">🏝️</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Paraíso Caribeño</h5>
+                            <p class="tour-destination">
+                                <i class="fas fa-map-marker-alt"></i> Cancún, México
+                            </p>
+                            <p style="color: #555; font-size: 0.9rem;">
+                                Disfruta de playas de arena blanca, aguas cristalinas y la mejor vida nocturna del Caribe.
+                            </p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="text-muted d-block">Duración</small>
+                                    <strong>7 días / 6 noches</strong>
+                                </div>
+                                <div>
+                                    <small class="text-muted d-block">Tipo</small>
+                                    <strong>Playa</strong>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <small class="text-muted d-block">Incluye:</small>
+                                <ul style="font-size: 0.85rem; padding-left: 1.2rem;">
+                                    <li>Vuelo ida y vuelta</li>
+                                    <li>Hotel 4 estrellas</li>
+                                    <li>Desayunos incluidos</li>
+                                    <li>Tours opcionales</li>
+                                </ul>
+                            </div>
+                            <div class="tour-price mb-3">$1,299</div>
+                            <a href="contact.html" class="btn btn-primary w-100">Reservar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card tour-card">
+                        <div class="tour-image">🏖️</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Relax Tropical</h5>
+                            <p class="tour-destination">
+                                <i class="fas fa-map-marker-alt"></i> Punta Cana, R.D.
+                            </p>
+                            <p style="color: #555; font-size: 0.9rem;">
+                                Resort todo incluido con playas paradisíacas, deportes acuáticos y entretenimiento.
+                            </p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="text-muted d-block">Duración</small>
+                                    <strong>6 días / 5 noches</strong>
+                                </div>
+                                <div>
+                                    <small class="text-muted d-block">Tipo</small>
+                                    <strong>Resort</strong>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <small class="text-muted d-block">Incluye:</small>
+                                <ul style="font-size: 0.85rem; padding-left: 1.2rem;">
+                                    <li>Vuelo ida y vuelta</li>
+                                    <li>Resort 5 estrellas</li>
+                                    <li>Todo incluido</li>
+                                    <li>Actividades recreativas</li>
+                                </ul>
+                            </div>
+                            <div class="tour-price mb-3">$1,199</div>
+                            <a href="contact.html" class="btn btn-primary w-100">Reservar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card tour-card">
+                        <div class="tour-image">🌴</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Exploración Maya</h5>
+                            <p class="tour-destination">
+                                <i class="fas fa-map-marker-alt"></i> Riviera Maya, México
+                            </p>
+                            <p style="color: #555; font-size: 0.9rem;">
+                                Combina playa y cultura visitando ruinas mayas, cenotes y playas del Caribe.
+                            </p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="text-muted d-block">Duración</small>
+                                    <strong>8 días / 7 noches</strong>
+                                </div>
+                                <div>
+                                    <small class="text-muted d-block">Tipo</small>
+                                    <strong>Cultural</strong>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <small class="text-muted d-block">Incluye:</small>
+                                <ul style="font-size: 0.85rem; padding-left: 1.2rem;">
+                                    <li>Vuelo ida y vuelta</li>
+                                    <li>Hotel 4 estrellas</li>
+                                    <li>Desayuno y cena</li>
+                                    <li>Tours a ruinas mayas</li>
+                                </ul>
+                            </div>
+                            <div class="tour-price mb-3">$1,499</div>
+                            <a href="contact.html" class="btn btn-primary w-100">Reservar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Tours de Aventura</h2>
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card tour-card">
+                        <div class="tour-image">🏔️</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Aventura Andina</h5>
+                            <p class="tour-destination">
+                                <i class="fas fa-map-marker-alt"></i> Cusco, Perú
+                            </p>
+                            <p style="color: #555; font-size: 0.9rem;">
+                                Explora Machu Picchu, Valle Sagrado y la increíble cultura inca en los Andes.
+                            </p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="text-muted d-block">Duración</small>
+                                    <strong>5 días / 4 noches</strong>
+                                </div>
+                                <div>
+                                    <small class="text-muted d-block">Tipo</small>
+                                    <strong>Aventura</strong>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <small class="text-muted d-block">Incluye:</small>
+                                <ul style="font-size: 0.85rem; padding-left: 1.2rem;">
+                                    <li>Vuelo ida y vuelta</li>
+                                    <li>Hotel 3 estrellas</li>
+                                    <li>Guía profesional</li>
+                                    <li>Entrada a Machu Picchu</li>
+                                </ul>
+                            </div>
+                            <div class="tour-price mb-3">$899</div>
+                            <a href="contact.html" class="btn btn-primary w-100">Reservar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card tour-card">
+                        <div class="tour-image">🌋</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Naturaleza Extrema</h5>
+                            <p class="tour-destination">
+                                <i class="fas fa-map-marker-alt"></i> Costa Rica
+                            </p>
+                            <p style="color: #555; font-size: 0.9rem;">
+                                Tirolesa, rafting, volcanes y selva tropical en el paraíso de la biodiversidad.
+                            </p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="text-muted d-block">Duración</small>
+                                    <strong>7 días / 6 noches</strong>
+                                </div>
+                                <div>
+                                    <small class="text-muted d-block">Tipo</small>
+                                    <strong>Aventura</strong>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <small class="text-muted d-block">Incluye:</small>
+                                <ul style="font-size: 0.85rem; padding-left: 1.2rem;">
+                                    <li>Vuelo ida y vuelta</li>
+                                    <li>Lodges ecológicos</li>
+                                    <li>Todas las actividades</li>
+                                    <li>Transporte incluido</li>
+                                </ul>
+                            </div>
+                            <div class="tour-price mb-3">$1,399</div>
+                            <a href="contact.html" class="btn btn-primary w-100">Reservar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card tour-card">
+                        <div class="tour-image">🗻</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Camino Inca</h5>
+                            <p class="tour-destination">
+                                <i class="fas fa-map-marker-alt"></i> Perú
+                            </p>
+                            <p style="color: #555; font-size: 0.9rem;">
+                                Trekking de 4 días por el legendario Camino Inca hasta Machu Picchu.
+                            </p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="text-muted d-block">Duración</small>
+                                    <strong>6 días / 5 noches</strong>
+                                </div>
+                                <div>
+                                    <small class="text-muted d-block">Tipo</small>
+                                    <strong>Aventura</strong>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <small class="text-muted d-block">Incluye:</small>
+                                <ul style="font-size: 0.85rem; padding-left: 1.2rem;">
+                                    <li>Vuelo ida y vuelta</li>
+                                    <li>Camping y hotel</li>
+                                    <li>Guía experto</li>
+                                    <li>Comidas durante trek</li>
+                                </ul>
+                            </div>
+                            <div class="tour-price mb-3">$1,599</div>
+                            <a href="contact.html" class="btn btn-primary w-100">Reservar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Tours Culturales</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card tour-card">
+                        <div class="tour-image">🏛️</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tesoros Coloniales</h5>
+                            <p class="tour-destination">
+                                <i class="fas fa-map-marker-alt"></i> Cartagena, Colombia
+                            </p>
+                            <p style="color: #555; font-size: 0.9rem;">
+                                Descubre la historia colonial, arquitectura y gastronomía caribeña.
+                            </p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="text-muted d-block">Duración</small>
+                                    <strong>5 días / 4 noches</strong>
+                                </div>
+                                <div>
+                                    <small class="text-muted d-block">Tipo</small>
+                                    <strong>Cultural</strong>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <small class="text-muted d-block">Incluye:</small>
+                                <ul style="font-size: 0.85rem; padding-left: 1.2rem;">
+                                    <li>Vuelo ida y vuelta</li>
+                                    <li>Hotel boutique</li>
+                                    <li>Tours históricos</li>
+                                    <li>Cena típica</li>
+                                </ul>
+                            </div>
+                            <div class="tour-price mb-3">$999</div>
+                            <a href="contact.html" class="btn btn-primary w-100">Reservar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card tour-card">
+                        <div class="tour-image">🎭</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Arte y Cultura</h5>
+                            <p class="tour-destination">
+                                <i class="fas fa-map-marker-alt"></i> Ciudad de México
+                            </p>
+                            <p style="color: #555; font-size: 0.9rem;">
+                                Museos, pirámides, gastronomía y la vibrante cultura mexicana.
+                            </p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="text-muted d-block">Duración</small>
+                                    <strong>4 días / 3 noches</strong>
+                                </div>
+                                <div>
+                                    <small class="text-muted d-block">Tipo</small>
+                                    <strong>Cultural</strong>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <small class="text-muted d-block">Incluye:</small>
+                                <ul style="font-size: 0.85rem; padding-left: 1.2rem;">
+                                    <li>Vuelo ida y vuelta</li>
+                                    <li>Hotel 4 estrellas</li>
+                                    <li>Tours a museos</li>
+                                    <li>Visita a Teotihuacán</li>
+                                </ul>
+                            </div>
+                            <div class="tour-price mb-3">$799</div>
+                            <a href="contact.html" class="btn btn-primary w-100">Reservar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card tour-card">
+                        <div class="tour-image">🌺</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ruta del Café</h5>
+                            <p class="tour-destination">
+                                <i class="fas fa-map-marker-alt"></i> Eje Cafetero, Colombia
+                            </p>
+                            <p style="color: #555; font-size: 0.9rem;">
+                                Experimenta la cultura cafetera, haciendas tradicionales y naturaleza.
+                            </p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="text-muted d-block">Duración</small>
+                                    <strong>5 días / 4 noches</strong>
+                                </div>
+                                <div>
+                                    <small class="text-muted d-block">Tipo</small>
+                                    <strong>Cultural</strong>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <small class="text-muted d-block">Incluye:</small>
+                                <ul style="font-size: 0.85rem; padding-left: 1.2rem;">
+                                    <li>Vuelo ida y vuelta</li>
+                                    <li>Hacienda cafetera</li>
+                                    <li>Tours de café</li>
+                                    <li>Transporte incluido</li>
+                                </ul>
+                            </div>
+                            <div class="tour-price mb-3">$899</div>
+                            <a href="contact.html" class="btn btn-primary w-100">Reservar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>El Encanto Travel</h5>
+                    <p>Tu puerta al mundo. Creando experiencias inolvidables desde 2015.</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Inicio</a></li>
+                        <li class="mb-2"><a href="paquetes.html">Paquetes</a></li>
+                        <li class="mb-2"><a href="about.html">Acerca de Nosotros</a></li>
+                        <li class="mb-2"><a href="contact.html">Contáctenos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Tours Personalizados</a></li>
+                        <li class="mb-2"><a href="#">Grupos Corporativos</a></li>
+                        <li class="mb-2"><a href="#">Bodas Destino</a></li>
+                        <li class="mb-2"><a href="#">Viajes de Luna de Miel</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-phone"></i> +503 7777-8888</p>
+                    <p><i class="fas fa-envelope"></i> info@elencanto.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Santa Tecla, El Salvador</p>
+                </div>
+            </div>
+
+            <div class="text-center pt-3 mt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                <p class="text-muted">&copy; 2025 El Encanto Travel. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Encanto Travel - Tu aventura comienza aquí</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-umbrella-beach"></i> El Encanto Travel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="paquetes.html">Paquetes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html" style="color: var(--accent) !important;">
+                        <i class="fas fa-user-shield"></i> Admin
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container text-center">
+            <h1 class="mb-4">Descubre el Mundo con El Encanto</h1>
+            <p class="mb-5">Experiencias únicas, destinos inolvidables y aventuras que transforman vidas</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="paquetes.html" class="btn btn-primary">Ver Tours</a>
+                <a href="contact.html" class="btn btn-outline-light">Contáctanos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Destacados -->
+    <section class="tours-section">
+        <div class="container">
+            <h2 class="section-title">Tours Destacados</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card tour-card">
+                        <div class="tour-image">🏝️</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Paraíso Caribeño</h5>
+                            <p class="tour-destination">
+                                <i class="fas fa-map-marker-alt"></i> Cancún, México
+                            </p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="text-muted d-block">Duración</small>
+                                    <strong>7 días</strong>
+                                </div>
+                                <div>
+                                    <small class="text-muted d-block">Tipo</small>
+                                    <strong>Playa</strong>
+                                </div>
+                            </div>
+                            <div class="tour-price mb-3">$1,299</div>
+                            <a href="reserva.html" class="btn btn-primary w-100">Reservar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card tour-card">
+                        <div class="tour-image">🏔️</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Aventura Andina</h5>
+                            <p class="tour-destination">
+                                <i class="fas fa-map-marker-alt"></i> Cusco, Perú
+                            </p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="text-muted d-block">Duración</small>
+                                    <strong>5 días</strong>
+                                </div>
+                                <div>
+                                    <small class="text-muted d-block">Tipo</small>
+                                    <strong>Aventura</strong>
+                                </div>
+                            </div>
+                            <div class="tour-price mb-3">$899</div>
+                            <a href="reserva.html" class="btn btn-primary w-100">Reservar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card tour-card">
+                        <div class="tour-image">🏖️</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Relax Tropical</h5>
+                            <p class="tour-destination">
+                                <i class="fas fa-map-marker-alt"></i> Punta Cana, R.D.
+                            </p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="text-muted d-block">Duración</small>
+                                    <strong>6 días</strong>
+                                </div>
+                                <div>
+                                    <small class="text-muted d-block">Tipo</small>
+                                    <strong>Resort</strong>
+                                </div>
+                            </div>
+                            <div class="tour-price mb-3">$1,199</div>
+                            <a href="reserva.html" class="btn btn-primary w-100">Reservar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card tour-card">
+                        <div class="tour-image">🌴</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Exploración Maya</h5>
+                            <p class="tour-destination">
+                                <i class="fas fa-map-marker-alt"></i> Riviera Maya, México
+                            </p>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <small class="text-muted d-block">Duración</small>
+                                    <strong>8 días</strong>
+                                </div>
+                                <div>
+                                    <small class="text-muted d-block">Tipo</small>
+                                    <strong>Cultural</strong>
+                                </div>
+                            </div>
+                            <div class="tour-price mb-3">$1,499</div>
+                            <a href="reserva.html" class="btn btn-primary w-100">Reservar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <p class="mb-4" style="font-style: italic; color: #555;">
+                            Una experiencia absolutamente maravillosa. El equipo de El Encanto se aseguró de que cada detalle fuera perfecto. ¡Volveremos sin duda!
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <div class="author-avatar me-3">MG</div>
+                            <div>
+                                <h6 class="mb-0" style="color: var(--secondary);">María González</h6>
+                                <small class="text-muted">Paraíso Caribeño</small>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <p class="mb-4" style="font-style: italic; color: #555;">
+                            La aventura en los Andes superó todas mis expectativas. Guías profesionales, itinerario bien organizado y paisajes espectaculares.
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <div class="author-avatar me-3">JR</div>
+                            <div>
+                                <h6 class="mb-0" style="color: var(--secondary);">Juan Rodríguez</h6>
+                                <small class="text-muted">Aventura Andina</small>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <p class="mb-4" style="font-style: italic; color: #555;">
+                            Perfecto para unas vacaciones en familia. Los niños se divirtieron muchísimo y nosotros pudimos relajarnos. Excelente servicio.
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <div class="author-avatar me-3">AS</div>
+                            <div>
+                                <h6 class="mb-0" style="color: var(--secondary);">Ana Sánchez</h6>
+                                <small class="text-muted">Relax Tropical</small>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>El Encanto Travel</h5>
+                    <p>Tu puerta al mundo. Creando experiencias inolvidables desde 2015.</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Inicio</a></li>
+                        <li class="mb-2"><a href="paquetes.html">Paquetes</a></li>
+                        <li class="mb-2"><a href="about.html">Acerca de Nosotros</a></li>
+                        <li class="mb-2"><a href="contact.html">Contáctenos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Tours Personalizados</a></li>
+                        <li class="mb-2"><a href="#">Grupos Corporativos</a></li>
+                        <li class="mb-2"><a href="#">Bodas Destino</a></li>
+                        <li class="mb-2"><a href="#">Viajes de Luna de Miel</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-phone"></i> +503 7777-8888</p>
+                    <p><i class="fas fa-envelope"></i> info@elencanto.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Santa Tecla, El Salvador</p>
+                </div>
+            </div>
+
+            <div class="text-center pt-3 mt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                <p class="text-muted">&copy; 2025 El Encanto Travel. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

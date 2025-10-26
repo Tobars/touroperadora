@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - El Encanto Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-umbrella-beach"></i> El Encanto Travel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="paquetes.html">Paquetes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html" style="color: var(--accent) !important;">
+                        <i class="fas fa-user-shield"></i> Admin
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" style="height: 50vh;">
+        <div class="container text-center">
+            <h1 class="mb-4">Contáctanos</h1>
+            <p class="mb-0">Estamos aquí para ayudarte a planificar tu próxima aventura</p>
+        </div>
+    </section>
+
+    <section class="tours-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h2 class="section-title" style="text-align: left;">Envíanos un Mensaje</h2>
+                    <div class="card tour-card">
+                        <div class="card-body p-4">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="asunto" class="form-label">Asunto</label>
+                                    <select class="form-select" id="asunto" required>
+                                        <option value="">Selecciona una opción</option>
+                                        <option value="cotizacion">Solicitar Cotización</option>
+                                        <option value="informacion">Información sobre Tours</option>
+                                        <option value="reserva">Consulta de Reserva</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h2 class="section-title" style="text-align: left;">Información de Contacto</h2>
+                    <div class="card tour-card mb-4">
+                        <div class="card-body p-4">
+                            <div class="mb-4">
+                                <div class="d-flex align-items-start mb-3">
+                                    <div class="author-avatar me-3">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h5 style="color: var(--secondary); margin-bottom: 0.5rem;">Dirección</h5>
+                                        <p class="text-muted mb-0">Calle Principal #123, Santa Tecla<br>El Salvador, C.A.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="d-flex align-items-start mb-3">
+                                    <div class="author-avatar me-3">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <h5 style="color: var(--secondary); margin-bottom: 0.5rem;">Teléfono</h5>
+                                        <p class="text-muted mb-0">+503 7777-8888<br>+503 2222-3333</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="d-flex align-items-start mb-3">
+                                    <div class="author-avatar me-3">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h5 style="color: var(--secondary); margin-bottom: 0.5rem;">Email</h5>
+                                        <p class="text-muted mb-0">info@elencanto.com<br>ventas@elencanto.com</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="d-flex align-items-start mb-3">
+                                    <div class="author-avatar me-3">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <h5 style="color: var(--secondary); margin-bottom: 0.5rem;">Horario</h5>
+                                        <p class="text-muted mb-0">Lunes a Viernes: 8:00 AM - 6:00 PM<br>Sábados: 9:00 AM - 2:00 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card tour-card">
+                        <div class="card-body p-4 text-center">
+                            <h5 class="mb-3" style="color: var(--secondary);">Síguenos en Redes Sociales</h5>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>El Encanto Travel</h5>
+                    <p>Tu puerta al mundo. Creando experiencias inolvidables desde 2015.</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Inicio</a></li>
+                        <li class="mb-2"><a href="paquetes.html">Paquetes</a></li>
+                        <li class="mb-2"><a href="about.html">Acerca de Nosotros</a></li>
+                        <li class="mb-2"><a href="contact.html">Contáctenos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Tours Personalizados</a></li>
+                        <li class="mb-2"><a href="#">Grupos Corporativos</a></li>
+                        <li class="mb-2"><a href="#">Bodas Destino</a></li>
+                        <li class="mb-2"><a href="#">Viajes de Luna de Miel</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-phone"></i> +503 7777-8888</p>
+                    <p><i class="fas fa-envelope"></i> info@elencanto.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Santa Tecla, El Salvador</p>
+                </div>
+            </div>
+
+            <div class="text-center pt-3 mt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                <p class="text-muted">&copy; 2025 El Encanto Travel. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

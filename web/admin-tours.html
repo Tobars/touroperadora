@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tours - Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="dashboard.html">
+                <i class="fas fa-user-shield"></i> Admin Panel
+            </a>
+            <div class="ms-auto d-flex align-items-center">
+                <span class="text-white me-3">
+                    <i class="fas fa-user-circle"></i> Admin Usuario
+                </span>
+                <a href="#" class="btn btn-outline-light btn-sm" onclick="logout()">
+                    <i class="fas fa-sign-out-alt"></i> Salir
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="admin-sidebar">
+        <nav class="nav flex-column">
+            <a class="nav-link" href="dashboard.html">
+                <i class="fas fa-chart-line"></i>
+                <span>Dashboard</span>
+            </a>
+            <a class="nav-link active" href="admin-tours.html">
+                <i class="fas fa-suitcase"></i>
+                <span>Tours</span>
+            </a>
+            <a class="nav-link" href="admin-reservas.html">
+                <i class="fas fa-calendar-check"></i>
+                <span>Reservas</span>
+            </a>
+            <a class="nav-link" href="admin-guias.html">
+                <i class="fas fa-user-tie"></i>
+                <span>Guías</span>
+            </a>
+            <a class="nav-link" href="admin-proveedores.html">
+                <i class="fas fa-handshake"></i>
+                <span>Proveedores</span>
+            </a>
+            <a class="nav-link" href="admin-clientes.html">
+                <i class="fas fa-users"></i>
+                <span>Clientes</span>
+            </a>
+            <a class="nav-link" href="index.html">
+                <i class="fas fa-home"></i>
+                <span>Ver Sitio</span>
+            </a>
+        </nav>
+    </div>
+
+    <div class="admin-content">
+        <div class="container-fluid p-4">
+            <div class="admin-header d-flex justify-content-between align-items-center">
+                <div>
+                    <h2><i class="fas fa-suitcase"></i> Gestión de Tours</h2>
+                    <p class="text-muted mb-0">Administrar paquetes turísticos</p>
+                </div>
+                <button class="btn btn-primary" onclick="openTourModal()">
+                    <i class="fas fa-plus"></i> Nuevo Tour
+                </button>
+            </div>
+
+            <div class="admin-card">
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" placeholder="Buscar tour..." id="searchTour">
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-select" id="filterEstado">
+                            <option value="">Todos los estados</option>
+                            <option value="Activo">Activo</option>
+                            <option value="Suspendido">Suspendido</option>
+                            <option value="Finalizado">Finalizado</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-select" id="filterTipo">
+                            <option value="">Todos los tipos</option>
+                            <option value="Playa">Playa</option>
+                            <option value="Aventura">Aventura</option>
+                            <option value="Cultural">Cultural</option>
+                            <option value="Resort">Resort</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Destino</th>
+                                <th>Tipo</th>
+                                <th>Fecha Salida</th>
+                                <th>Duración</th>
+                                <th>Precio</th>
+                                <th>Cupo</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="toursTable">
+                            <tr>
+                                <td>1</td>
+                                <td>Paraíso Caribeño</td>
+                                <td>Cancún, México</td>
+                                <td>Playa</td>
+                                <td>2025-11-15</td>
+                                <td>7 días</td>
+                                <td>$1,299</td>
+                                <td>18/25</td>
+                                <td><span class="badge badge-success">Activo</span></td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn btn-warning btn-sm" onclick="editTour(1)">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-danger btn-sm" onclick="deleteTour(1)">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Aventura Andina</td>
+                                <td>Cusco, Perú</td>
+                                <td>Aventura</td>
+                                <td>2025-11-20</td>
+                                <td>5 días</td>
+                                <td>$899</td>
+                                <td>12/15</td>
+                                <td><span class="badge badge-success">Activo</span></td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn btn-warning btn-sm" onclick="editTour(2)">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-danger btn-sm" onclick="deleteTour(2)">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Relax Tropical</td>
+                                <td>Punta Cana, R.D.</td>
+                                <td>Resort</td>
+                                <td>2025-11-22</td>
+                                <td>6 días</td>
+                                <td>$1,199</td>
+                                <td>25/30</td>
+                                <td><span class="badge badge-success">Activo</span></td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn btn-warning btn-sm" onclick="editTour(3)">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-danger btn-sm" onclick="deleteTour(3)">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tourModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Nuevo Tour</h3>
+                <button class="close" onclick="closeTourModal()">&times;</button>
+            </div>
+            <form id="tourForm">
+                <input type="hidden" id="tourId">
+                
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Nombre del Tour</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Destino</label>
+                        <input type="text" class="form-control" id="destino" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Descripción</label>
+                    <textarea class="form-control" id="descripcion" rows="3"></textarea>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Tipo de Tour</label>
+                        <select class="form-select" id="tipo_tour" required>
+                            <option value="">Seleccionar...</option>
+                            <option value="Playa">Playa</option>
+                            <option value="Aventura">Aventura</option>
+                            <option value="Cultural">Cultural</option>
+                            <option value="Resort">Resort</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Fecha de Salida</label>
+                        <input type="date" class="form-control" id="fecha_salida" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Duración (días)</label>
+                        <input type="number" class="form-control" id="duracion_dias" min="1" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Precio por Persona</label>
+                        <input type="number" class="form-control" id="precio_por_persona" step="0.01" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Estado</label>
+                        <select class="form-select" id="estado" required>
+                            <option value="Activo">Activo</option>
+                            <option value="Suspendido">Suspendido</option>
+                            <option value="Finalizado">Finalizado</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Cupo Mínimo</label>
+                        <input type="number" class="form-control" id="cupo_minimo" min="1" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Cupo Máximo</label>
+                        <input type="number" class="form-control" id="cupo_maximo" min="1" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Servicios Incluidos</label>
+                    <input type="text" class="form-control" id="servicios_incluidos" placeholder="Ej: Vuelo, Hotel, Desayuno">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Proveedor</label>
+                        <select class="form-select" id="proveedor_id">
+                            <option value="">Sin asignar</option>
+                            <option value="1">Proveedor 1</option>
+                            <option value="2">Proveedor 2</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Guía Asignado</label>
+                        <select class="form-select" id="guia_id">
+                            <option value="">Sin asignar</option>
+                            <option value="1">Juan Pérez</option>
+                            <option value="2">María García</option>
+                            <option value="3">Carlos López</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-2 mt-4">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save"></i> Guardar
+                    </button>
+                    <button type="button" class="btn btn-secondary" onclick="closeTourModal()">
+                        Cancelar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        if(!sessionStorage.getItem('isLoggedIn')) {
+            window.location.href = 'login.html';
+        }
+    </script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
